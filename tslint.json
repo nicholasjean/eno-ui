@@ -1,0 +1,150 @@
+{
+    "extends": [
+      "tslint-eslint-rules",
+      "tslint-config-standard",
+      "tslint-react",
+      "tslint-sonarts"
+    ],
+    "rules": {
+      "no-small-switch": false,
+      "no-nested-template-literals": false,
+      "no-identical-functions": false,
+      "curly": true,
+      "no-unnecessary-type-assertion": true,
+      "member-ordering": [
+        true, {
+          "order": [
+            "static-field",
+            "static-method",
+            "instance-field",
+            "constructor"
+          ]
+        }
+      ],
+      "no-use-before-declare": true,
+      "no-invalid-this": true,
+      "no-invalid-template-strings": true,
+      "no-duplicate-variable": [true, "check-parameters"],
+      "prefer-template": [ true, "allow-single-concat" ],
+      "object-literal-shorthand": true,
+      "deprecation": true,
+      "no-parameter-reassignment": true,
+      "no-implicit-dependencies": [ true, "dev" ],
+      "no-empty": [true, "allow-empty-catch"],
+      "no-duplicate-super": true,
+      "no-conditional-assignment": true,
+      "ban-comma-operator": true,
+      "unified-signatures": true,
+      "only-arrow-functions": [true, "allow-declarations", "allow-named-functions"],
+      "no-empty-interface": true,
+      "import-spacing": true,
+      "comment-format": [true, "check-space"],
+      "class-name": true,
+      "whitespace": [
+        true,
+        "check-branch",
+        "check-decl",
+        "check-operator",
+        "check-module",
+        "check-separator",
+        "check-rest-spread",
+        "check-type",
+        "check-typecast",
+        "check-type-operator",
+        "check-preblock"
+      ],
+      "align": [
+        true,
+        "elements",
+        "members",
+        "parameters",
+        "statements"
+      ],
+      "arrow-parens": true,
+      "semicolon": [ true, "always" ],
+      "arrow-return-shorthand": true,
+      "prefer-const": [ true, { "destructuring": "all" } ],
+      "no-shadowed-variable": true,
+      "array-bracket-spacing": "always",
+      "ter-no-self-compare": true,
+      "no-multi-spaces": true,
+      "valid-typeof": true,
+      "space-in-parens": [true, "never"],
+      "no-unexpected-multiline": true,
+      "no-sparse-arrays": true,
+      "no-irregular-whitespace": true,
+      "no-invalid-regexp": true,
+      "no-extra-semi": true,
+      "no-ex-assign": true,
+      "no-console": true,
+      "no-duplicate-case": true,
+      "no-duplicate-switch-case": true,
+      "switch-default": true,
+      "no-constant-condition": true,
+      "object-curly-spacing": [ true, "always" ],
+      "interface-name": [ true, "always-prefix" ],
+      "no-trailing-whitespace": true,
+      "no-unused-variable": false,
+      "ter-func-call-spacing": [ true ],
+      "block-spacing":[
+        true,
+        "always"
+      ],
+      "ter-computed-property-spacing":  [true, "never" ],
+      "brace-style": [
+        true,
+        "1tbs",
+        {
+          "allowSingleLine": true
+        }
+      ],
+      "space-before-function-paren": [ true, { "anonymous": "never", "named": "never", "asyncArrow": "always", "constructor": "never", "method": "never" } ],
+      "ter-arrow-spacing": [ true ],
+      "no-switch-case-fall-through": true,
+      "jsx-key": true,
+      "jsx-curly-spacing": [ true, "always" ],
+      "jsx-no-multiline-js": false,
+      "jsx-no-lambda": false,
+      "jsx-alignment": true,
+      "jsx-no-string-ref": true,
+      "jsx-boolean-value": "always",
+      "jsx-space-before-trailing-slash": true,
+      "jsx-self-close": true,
+      "eofline": true,
+      "no-unnecessary-class": true,
+      "quotemark": [ true, "single", "jsx-double", "avoid-escape", "avoid-template" ],
+      "no-string-literal": true,
+      "object-literal-key-quotes": [ true, "as-needed" ],
+      "no-consecutive-blank-lines": true,
+      "new-parens": true,
+      "triple-equals": true,
+      "prefer-object-spread": true,
+      "no-var-keyword": true,
+      "restrict-plus-operands": true,
+      "indent": [ true, "spaces", 2 ],
+      "max-line-length": [ true, { "limit": 120, "ignore-pattern": "expect\\("}],
+      "ter-no-mixed-spaces-and-tabs": { "type": "spaces" },
+      "no-duplicate-imports": true,
+      "cyclomatic-complexity": true,
+      "max-union-size": false,
+      "trailing-comma": [
+        true,
+        {
+          "multiline": {
+            "objects": "always",
+            "arrays": "always",
+            "functions": "never",
+            "typeLiterals": "ignore",
+            "exports": "always"
+          },
+          "esSpecCompliant": true
+        }
+      ]
+    },
+    "linterOptions": {
+      "exclude": [
+        "**/*.json"
+      ]
+    }
+  }
+  
